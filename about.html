@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Final Project Sydney Scorza
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+
+</head>
+<body class="aboutBody">
+
+<!-- DROPDOWN https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+        <!-- NAVIGATION -->
+        <nav class="full-width sticky centered">
+            <a href="about.html">About </a>
+            <a href="index.html" class="navImage"><img class="navImage" src="images/SLogo2.png" alt="Logo"></a>
+            <div class="dropdown">
+                <form class="dropbtn"><a class="shop" href="shop.html">Shop  	
+                    <span class="dropArrow">&#812;</span></a>
+                    <!-- https://unicode-table.com/en/032C/ UNICODE -->
+                </form>
+        <div class="dropContent">
+                <a href="shop-succulent.html">Succulents </a>
+                <a href="shop-roses.html">Roses</a>
+                <a href="shop-other.html">Other </a>
+        </div>
+    </div>
+    </nav>
+
+
+<!-- CONTENT -->
+<div class="aboutContainer">
+<div class="aboutShop">
+<section>
+        <figure class="founderImg">
+            <img src="images/sydney.JPG" alt="an image of Sydney">
+        </figure>
+    </section>
+    <section class="founder">
+        <h1>Our Founder</h1>
+        <p>Sydney Scorza founded Sydney's flowers to provide high quality flowers
+            at a low cost. After being unhappy with current selections, she decided
+            to take matters into her own hands and create a beautiful flower shop. 
+            She prides herself in only using the finest flowers.
+        </p>
+</section>
+<section class="visitP">
+    <h1>We'd Love to See You</h1>
+    <p>Located in Chicago, IL, Sydney's flowers is conveniently located 
+       near public transportation, as well as within access of major highways.
+       We'd love to see you, come visit!
+    </p>    
+</section>
+<section class="flowerShop">
+    <figure>
+<!-- Photo by lan deng on Unsplash https://unsplash.com/photos/9P14G0L9E7w -->
+    <img src="images/flower3.jpg" alt="An image of a flower shop">
+    </figure>
+</section>
+</div>
+
+<section>
+    <div id="mapid"></div>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <ul>
+            <li>123 Main St. <br> Chicago, IL <br> 60605</li>
+            <li>123-456-7890</li>
+            <li>sydneysflowers@gmail.com</li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <h3 class="nobr">Helpful Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop-succulent.html">Succulents</a></li>
+            <li><a href="shop-roses.html">Roses</a></li>
+            <li><a href="shop-other.html">More Flowers</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<!-- leaflet -->
+<script src="JavaScript/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+</body>
+</html>

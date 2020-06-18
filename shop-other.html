@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Final Project Sydney Scorza
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- DROPDOWN https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+        <!-- NAVIGATION -->
+        <nav class="full-width sticky centered">
+            <a href="about.html">About </a>
+            <a href="index.html" class="navImage"><img class="navImage" src="images/SLogo2.png" alt="Logo"></a>
+            <div class="dropdown">
+                <form class="dropbtn"><a class="shop" href="shop.html">Shop  	
+                    <span class="dropArrow">&#812;</span></a>
+                    <!-- https://unicode-table.com/en/032C/ UNICODE -->
+                </form>
+        <div class="dropContent">
+                <a href="shop-succulent.html">Succulents </a>
+                <a href="shop-roses.html">Roses</a>
+                <a href="shop-other.html">Other </a>
+        </div>
+    </div>
+    </nav>
+
+<!-- CONTENT -->
+<div class="otherContainer">
+    <h1>Shop More Flowers</h1>
+</div>
+
+<article>
+    <div class="flowerGalleryHome">
+    <div class="homeShopContain">
+
+<figure>
+            <!-- Photo by Autumn Mott Rodeheaver on Unsplash https://unsplash.com/photos/JyXJouX8lGc-->
+            <img src="images/other2.jpg" alt="an image of flowers">
+        <figcaption>
+            <form action="shop-succulent.html">
+                <button type="submit" class="buttonOther">$15/mason jar bouquets</button>
+            </form>
+        </figcaption>
+</figure>
+
+<figure>
+            <!-- Photo by Annie Spratt on Unsplash https://unsplash.com/photos/4wz1YsANFB0 -->
+            <img src="images/other3.jpg" alt="an image of flowers">
+        <figcaption>
+                <button type="submit" class="buttonOther">$11/plant</button>
+        </figcaption>
+</figure>
+
+<figure>
+            <!-- Photo by Ben Ashby on Unsplash https://unsplash.com/photos/jUoyVlzj-dY -->
+            <img src="images/other4.jpg" alt="an image of flowers">
+        <figcaption>
+            <form action="shop-other.html">
+                <button type="submit" class="buttonOther">$30/bouquet</button>
+            </form>
+        </figcaption>
+</figure>
+</div>
+
+</div>
+</article>
+
+<!-- FOOTER -->
+<footer>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <ul>
+            <li>123 Main St. <br> Chicago, IL <br> 60605</li>
+            <li>123-456-7890</li>
+            <li>sydneysflowers@gmail.com</li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <h3 class="nobr">Helpful Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop-succulent.html">Succulents</a></li>
+            <li><a href="shop-roses.html">Roses</a></li>
+            <li><a href="shop-other.html">More Flowers</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+
+</footer>
+</body>
+</html>

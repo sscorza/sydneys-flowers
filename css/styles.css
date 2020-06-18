@@ -1,0 +1,849 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* UTILITIES */
+  
+  /* hides an element on screen, but not from screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* no break */
+  .nobr {
+    white-space: nowrap;
+  }
+  
+  /* START STYLES HERE */
+  
+  /* NAVIGATION */
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+  }
+  
+  nav.full-width a:hover:not(.navImage),
+  nav.full-width a:active {
+    color: #f2aec7;
+    border-bottom: 6px dotted #ffebf2;
+  }
+
+  .dropbtn a:link,
+  nav.full-width a:link,
+  nav.full-width a:visited{
+    color: #ffcb78;
+    text-decoration: none;   
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+  }
+
+   nav.full-width a:not(.navImage){
+    line-height: 1em;
+    padding: 35px 45px 0px 45px;
+  }
+
+  .dropbtn{
+    line-height: 1em;
+    padding: 35px 35px 0 0;
+  }
+
+  .navImage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 80px;
+    padding-left: 1%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+  
+  .centered {
+    justify-content: center;
+  }
+  
+/* DROPDOWN https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+
+.dropArrow{
+  padding: 15px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropContent a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropContent {
+  display: block;
+}
+
+  /* FOOTER */
+    footer h3{
+      font-family: 'Quicksand', sans-serif;
+      padding-left: 25%;
+    }
+
+    footer{
+      height: 250px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      background-color: rgba(25, 255, 255, .08);
+    }
+
+    .footerHome{
+      background-color: white;
+    }
+
+    .links{
+      padding-right: 25%;
+    }
+
+    .contact li{
+      padding-left: 10%;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    footer li{
+      list-style-type: none;
+    }
+
+    footer li{
+      margin: 10px 0 10px 0;
+    }
+
+    .links li a:hover{
+      color: #f2aec7;
+    }
+
+    .links a:link ,
+    .links a:visited{
+      color: black;
+      text-decoration: none;   
+      font-family: 'Quicksand', sans-serif;
+    }
+
+  /* TYPOGRAPHY */
+  h1, h2{
+    font-family: 'Sacramento', cursive;
+  }
+
+  p{
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /* HOME PAGE */
+  
+  .homeContainer{
+    background-image: url('../images/flower2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border: 15px solid white;
+    transition: .3s;
+    /* Photo by  [Sergey Shmidt](https://unsplash.com/@monstercritic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  on  [Unsplash](https://unsplash.com/s/photos/flowers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
+https://unsplash.com/photos/koy6FlCCy5s */
+  }
+  
+.homeContainer:hover{
+  background-image: url('../images/flower2.jpg');
+  opacity: .8;
+}
+
+.homeIntro h1{
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+.introButton{
+  background-color: white;
+  border: none;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  margin-left: 15px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.introButton:hover{
+  background-color: #ffcb78;
+  color: #2697d4;
+  transform: scaleY(1.1);
+}
+
+.homeShopContain figure{
+  width: 375px;
+  margin: 0;
+  padding: 15px;
+}
+
+.homeShopContain figure img{
+  width: 100%;
+  transition: .3s;
+}
+
+.homeShopContain figure img:hover{
+  opacity: .8;
+}
+
+.homeShopContain{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Home{
+  max-width: 1500px;
+  padding-bottom: 5%;
+}
+
+.buttonHome1{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  margin-left: 20%;
+  margin-top: 6%;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.buttonHome1:hover{
+  background-color: #ffcb78;
+  transform: scaleY(1.1);
+}
+
+
+.homeAbout{
+  background-color: #F9DDE0;
+  max-width: 1500px;
+}
+
+.homeAbout img{
+  height: 600px;
+}
+
+.homeShopContain2{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.homeAbout section{
+  width: 605px;
+}
+
+.whoWeAre{
+  padding: 100px 55px 55px 55px;
+}
+
+.buttonHomeAbout{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  margin-left: 30%;
+  margin-top: 5%;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.buttonHomeAbout:hover{
+  background-color: #ffcb78;
+  transform: scaleY(1.1);
+}
+
+/* ABOUT PAGE */
+.aboutContainer{
+  max-width: 1400px;
+}
+
+.aboutShop{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.aboutShop section{
+  width: 580px
+}
+
+.founderImg img{
+  height: 350px;
+  border-radius: 75%/ 75%;
+  justify-content: center;
+  padding-left: 8%;
+}
+
+
+#mapid { 
+  height: 380px; 
+  border: 30px solid white;
+}
+
+.visitP {
+  width: 580px;
+  text-align: center;
+  background-color: #fff1b3;
+  border-left: 40px solid white;
+  /* background-color: #fff3bf; */
+}
+
+.visitP h1{
+  padding-top: 15%;
+}
+
+.founder{
+  background-color: #ffd9d4;
+  text-align: center;
+}
+
+.founder h1{
+  padding-top: 12%;
+}
+
+.flowerShop figure{
+  width: 580px;
+  margin: 0;
+}
+section img{
+  height: 387px;
+  margin: 0;
+  padding: 0;
+}
+
+ /* SHOP PAGE */
+
+ /* Photo by Katy Anne on Unsplash https://unsplash.com/photos/hqPJfPc45Fo */
+ .shopContainer{
+  background-image: url('../images/flower4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  border: 15px solid white;
+  transition: .3s;}
+
+ .shopContainer h1{
+  padding-top: 1%;
+  background-color: #FFCCD5;
+  height: 60px;
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+/* SUCCULENT PAGE */
+
+/* Photo by Angèle Kamp on Unsplash https://unsplash.com/photos/OSRpN1D52EM  */
+.succulentContainer{
+  background-image: url('../images/succ1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  border: 15px solid white;
+  transition: .3s;}
+
+
+.succulentContainer h1{
+  padding-top: 1%;
+  background-color: #FFCCD5;
+  height: 60px;
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+
+.buttonSucculent {
+  background-color: white;
+  border: 1px solid #9EAE84;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 8%;
+  margin-left: 23%;
+}
+
+.buttonSucculent:hover{
+  background-color: #9EAE84;
+  color: white;
+  transform: scaleY(1.1);
+}
+
+/* ROSES PAGE */
+ .buttonRose1 {
+  background-color: white;
+  border: 1px solid #F2A4A7;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 7%;
+  margin-left: 15%;
+}
+
+.buttonRose2 {
+  background-color: white;
+  border: 1px solid #F2A4A7;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 7%;
+  margin-left: 19%;
+}
+
+
+.buttonRose1:hover{
+  background-color: #FAE2E7;
+  transform: scaleY(1.1);
+}
+
+.buttonRose2:hover{
+  background-color: #FAE2E7;
+  transform: scaleY(1.1);
+}
+
+
+.buttonRose3 {
+  background-color: white;
+  border: 1px solid #F2A4A7;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 7%;
+  margin-left: 25%;
+}
+
+.buttonRose3:hover{
+  background-color: #FAE2E7;
+  transform: scaleY(1.1);
+}
+
+/* Photo by Anna on Unsplash https://unsplash.com/photos/8Ak1i3KLthc*/
+.roseContainer{
+  background-image: url('../images/roseBanner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  border: 15px solid white;
+  transition: .3s;}
+
+
+.roseContainer h1{
+  padding-top: 1%;
+  background-color: #FFCCD5;
+  height: 60px;
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+
+/* OTHER PAGE*/
+
+/* Photo by Anthony Melone on Unsplash https://unsplash.com/photos/W6zVhDL_ijg */
+.otherContainer{
+  background-image: url('../images/otherBanner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  border: 15px solid white;
+  transition: .3s;}
+
+
+.otherContainer h1{
+  padding-top: 1%;
+  background-color: #FFCCD5;
+  height: 60px;
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+.buttonOther {
+  background-color: white;
+  border: 1px solid #BDB1DE;
+  border-radius: 60% / 80%;
+  height: 40px;
+  width: 200px;
+  transition: .7s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 7%;
+  margin-left: 19%;
+}
+
+
+.buttonOther:hover{
+  background-color: #BDB1DE;
+  color: white;
+  transform: scaleY(1.1);
+}
+
+  
+  /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 667.98px) {
+
+    /* HOME PAGE, NAV, AND FOOTER */
+    nav.full-width a{
+      width: 80px;
+    }
+    .dropArrow{
+      display: none;
+    }
+
+    .navImage{
+      padding-left: 18% ;
+    }
+
+   .homeIntro h1, .whoWeAre h1{
+     font-size: 23px;
+   }
+
+    button{
+     font-size: 13px;
+   }
+
+   .contact ul{
+     padding-left: 15px;
+  }
+
+  footer{
+    height: 500px;
+  }
+
+  .contact h3{
+    padding-left: 35px;
+  }
+
+  .buttonHomeAbout{
+    margin-left: 2%;
+  }
+
+  .homeShopContain2 img{
+   height: 300px;
+  }
+
+  .homeAbout p{
+    font-size: 15px;
+  }  
+
+  .whoWeAre p{
+    padding: 0;
+  }
+
+  .whoWeAre{
+    padding: 0;
+    margin: 0;
+  }
+
+  .whoWeAre h1{
+    font-size: 20px;
+  }
+
+  /* ABOUT PAGE */
+ 
+  .visitP{
+    border: none;
+    width: 414px;
+  }
+
+  .flowerShop img{
+    display: none;
+  }
+
+  .aboutShop figure{
+    margin: 0;
+  }
+
+  .founderImg img{
+    max-width: 375px;
+  }
+ 
+  #mapid{
+    width: 350px;
+  }
+
+  .aboutShop h1{
+    font-size: 23px;
+    padding-top: 0;
+  }
+
+  .aboutShop p{
+    font-size: 15px;
+    padding-bottom: 7%;
+  }
+  }
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+
+    /* HOME PAGE, NAV, AND FOOTER */
+    nav.full-width a{
+      width: 80px;
+    }
+
+    .dropArrow{
+      display: none;
+    }
+
+    .navImage{
+      padding-left: 18% ;
+    }
+
+   .homeIntro h1, .whoWeAre h1{
+     font-size: 23px;
+   }
+
+    button{
+     font-size: 13px;
+   }
+
+   .contact ul{
+     padding-left: 15px;
+  }
+
+  footer{
+    height: 500px;
+  }
+
+  .contact h3{
+    padding-left: 35px;
+  }
+
+  .whoWeAre{
+    padding: 25px;
+  }
+
+  .buttonHomeAbout{
+    margin-left: 20%;
+  }
+
+  .homeShopContain2 img{
+   height: 300px;
+  }
+
+  .homeAbout p{
+    font-size: 15px;
+  }  
+
+  /* ABOUT PAGE */
+  .founder{
+    width: 414px;
+  }
+
+  .visitP{
+    border: none;
+    width: 414px;
+  }
+
+  .flowerShop img{
+    max-width: 414px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .aboutShop figure{
+    margin: 0;
+  }
+
+  .founderImg img{
+    max-width: 414px;
+  }
+ 
+  #mapid{
+    width: 350px;
+  }
+
+  .aboutShop h1{
+    font-size: 23px;
+    padding-top: 0;
+  }
+
+  .aboutShop p{
+    font-size: 15px;
+    padding-bottom: 7%;
+  }
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (min-width: 768px) and (max-width: 1025.98px) {
+    .dropArrow{
+      display: none;
+    }
+
+    /* HOME PAGE */
+
+    .homeShopContain2 img{
+      padding-left: 15%;
+    }
+
+    .whoWeAre h1{
+      padding-left: 20%;
+    }
+
+    .whoWeAre p{
+      padding-left: 25%;
+    }
+
+    .whoWeAre button{
+      margin-left: 43%;
+    }
+
+    /* ABOUT PAGE */
+    .aboutShop section{
+      height: 350px;
+      width: 375px;
+    }
+
+    .aboutShop figure{
+      padding: 0;
+      margin: 0;
+    }
+
+    .founderImg img{
+      border-radius: 50%/50%;
+    }
+
+    .flowerShop img{
+      max-width: 375px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .visitP{
+      border: none;
+    }
+
+    #mapid{
+      width: 750px;
+    }
+
+    /* SHOP PAGE */
+    .homeShopContain figure{
+      width: 255px;
+    }
+
+    .homeShopContain button{
+      font-size: 13px;
+      margin-left: 7%;
+    }
+
+  }
+  
+  /* Large devices (desktops, less than 1200px) */
+  
+  @media (min-width: 1024px) and (max-width: 1157.98px) {
+    /* HOME PAGE */
+
+    .homeShopContain2 img{
+      padding-left: 15%;
+    }
+
+    .whoWeAre h1{
+      padding-left: 20%;
+    }
+
+    .whoWeAre p{
+      padding-left: 25%;
+    }
+
+    .whoWeAre button{
+      margin-left: 43%;
+    }
+
+    /* ABOUT PAGE */
+    .aboutShop section{
+      height: 350px;
+      width: 390px;
+    }
+
+    .aboutShop figure{
+      padding: 0;
+      margin: 0;
+    }
+
+    .founderImg img{
+      border-radius: 50%/50%;
+    }
+
+    .flowerShop img{
+      max-width: 390px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .visitP{
+      border: none;
+    }
+
+    #mapid{
+      height: 300px;
+    }
+
+    /* SHOP PAGE */
+    .homeShopContain figure{
+      width: 255px;
+    }
+
+    .homeShopContain button{
+      font-size: 13px;
+      margin-left: 7%;
+    }
+
+  }
+  
+  /* Extra large devices (large desktops)
+  No media query since the extra-large breakpoint has no upper bound on its width */
